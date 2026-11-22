@@ -1,0 +1,135 @@
+{
+  "target": "Post_Semester_GPA",
+  "target_min": 1.0,
+  "target_max": 4.0,
+  "features": [
+    "Major_Category",
+    "Year_of_Study",
+    "Pre_Semester_GPA",
+    "Weekly_GenAI_Hours",
+    "Primary_Use_Case",
+    "Prompt_Engineering_Skill",
+    "Tool_Diversity",
+    "Paid_Subscription",
+    "Traditional_Study_Hours",
+    "Perceived_AI_Dependency",
+    "Institutional_Policy",
+    "Anxiety_Level_During_Exams"
+  ],
+  "numeric": {
+    "Pre_Semester_GPA": {
+      "min": 1.183,
+      "max": 3.998,
+      "median": 3.21,
+      "is_int": false
+    },
+    "Weekly_GenAI_Hours": {
+      "min": 0.0,
+      "max": 40.0,
+      "median": 5.8,
+      "is_int": false
+    },
+    "Tool_Diversity": {
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0,
+      "is_int": true
+    },
+    "Traditional_Study_Hours": {
+      "min": 1.0,
+      "max": 35.86,
+      "median": 11.18,
+      "is_int": false
+    },
+    "Perceived_AI_Dependency": {
+      "min": 1.0,
+      "max": 10.0,
+      "median": 3.0,
+      "is_int": true
+    },
+    "Anxiety_Level_During_Exams": {
+      "min": 1.0,
+      "max": 10.0,
+      "median": 4.0,
+      "is_int": true
+    }
+  },
+  "categorical": {
+    "Major_Category": {
+      "options": [
+        "Arts",
+        "Business",
+        "Humanities",
+        "Medical",
+        "STEM"
+      ],
+      "default": "STEM"
+    },
+    "Year_of_Study": {
+      "options": [
+        "Freshman",
+        "Graduate",
+        "Junior",
+        "Senior",
+        "Sophomore"
+      ],
+      "default": "Junior"
+    },
+    "Primary_Use_Case": {
+      "options": [
+        "Copywriting/Drafting",
+        "Debugging/Troubleshooting",
+        "Direct_Answer_Generation",
+        "Ideation",
+        "Summarizing_Reading"
+      ],
+      "default": "Debugging/Troubleshooting"
+    },
+    "Prompt_Engineering_Skill": {
+      "options": [
+        "Advanced",
+        "Beginner",
+        "Intermediate"
+      ],
+      "default": "Beginner"
+    },
+    "Paid_Subscription": {
+      "options": [
+        "False",
+        "True"
+      ],
+      "default": "False"
+    },
+    "Institutional_Policy": {
+      "options": [
+        "Actively_Encouraged",
+        "Allowed_With_Citation",
+        "Strict_Ban"
+      ],
+      "default": "Allowed_With_Citation"
+    }
+  },
+  "excluded_outcomes": [
+    "Skill_Retention_Score",
+    "Burnout_Risk_Level"
+  ],
+  "metrics": {
+    "MAE": 0.11254133344669343,
+    "RMSE": 0.14297145617787765,
+    "R2": 0.9153187761296228
+  },
+  "importance": {
+    "Pre_Semester_GPA": 1.7272038877881137,
+    "Traditional_Study_Hours": 0.04278242306555406,
+    "Primary_Use_Case": 0.0327466805932433,
+    "Weekly_GenAI_Hours": 0.019902205066050893,
+    "Year_of_Study": 0.01677028911115297,
+    "Prompt_Engineering_Skill": 0.01447745736585666,
+    "Institutional_Policy": 0.001472586320587843,
+    "Paid_Subscription": 0.0008458198196485744,
+    "Tool_Diversity": 4.473821991441973e-05,
+    "Perceived_AI_Dependency": 4.102020253311522e-05,
+    "Anxiety_Level_During_Exams": 9.670259559690919e-06,
+    "Major_Category": 8.785712230396924e-07
+  }
+}
